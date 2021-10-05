@@ -6,11 +6,12 @@
 
         <!--========== BOX ICONS ==========-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
+        <link rel="stylesheet" href="assets/css/fontawesome/all.css">
         <!--========== CSS ==========-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
-        <title>Responsive resume cv</title>
+
+        <title>Youssef Marzouk</title>
     </head>
     <body>
         <!--========== HEADER ==========-->
@@ -83,86 +84,72 @@
                                <h1 class="home__title">
                                    Youssef <b> Marzouk</b>
                                </h1>
-                               <h3 class="home__profession">Web developer</h3>
+                               <h3 class="home__profession lg_english">Software Developer</h3>
+                               <h3 class="home__profession lg_french">A la recherche d'un stage de fin d'études</h3>
 
                               
                                <div>
                                    <a download="" href="assets/pdf/ResumeCv.pdf" class="home__button-movil">download</a>
+                                   
                                </div>
                            </div>
 
                            <div class="home__address bd-grid">
                                <span class="home__information">
-                                   <i class="bx bx-map home__icon"></i> Tunis,Tunisia
+                                    <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/maps.png" alt="map"> <p class="lg_english">Tunis,Tunisia</p> <p class="lg_french">Tunis,Tunisie</p>
                                </span>
                                <span class="home__information">
-                                    <i class="bx bx-envelope home__icon" ></i> youssef.marzouk@esprit.tn
+                                <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/envelope.png" alt="map"> youssef.marzouk@esprit.tn 
                                 </span>
                                 <span class="home__information">
-                                    <i class="bx bx-phone home__icon"></i> +21690057620
+                                    <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/telephone.png" alt="map"> +21690057620
                                 </span>
                            </div>
                        </div> 
                         <!-- Theme change button -->
                         <i class="bx bx-moon change-theme" title="Theme" id="theme-button"></i>
-    
                          <!-- Button to generate and download the pdf. Available for desktop. -->
-                        <i onclick="downloadPDF()" class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>                    
+                        <i onclick="downloadIMG()" class="bx bx-download generate-pdf" title="Generate PDF" id="resume-button"></i>                    
                     </section>          
                     
                     <!--========== SOCIAL ==========-->
                     <section class="social section">
-                        <h2 class="section-title">SOCIAL</h2>
+                        <h2 class="section-title lg_english">SOCIAL</h2> <h2 class="section-title lg_french">SOCIAL</h2>
                         <div class="social__container bd-grid">
                             <a target="_blank" href="https://www.linkedin.com/in/youssef-marzouk/" class="social__link">
-                                <i class='bx bxl-linkedin-square social__icon'></i> @youssef-marzouk
+                                <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/linkedin.png" alt="map"> @youssef-marzouk
                             </a>
                             <a target="_blank"href="https://github.com/youssefmarzouk621/" class="social__link">
-                                <i class='bx bxl-github social__icon' ></i> @youssefmarzouk621
+                                <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/github.png" alt="map"> @youssefmarzouk621
                             </a>
+
+                            <a target="_blank"href="https://youssef-marzouk.herokuapp.com/" class="social__link">
+                                <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/globe.png" alt="map"> youssef-marzouk.herokuapp.com
+                            </a>
+
+                            
+
+                            
                         </div>
                     </section>
 
                     <!--========== PROFILE ==========-->
-                    <section class="profile section" id="profile">
+                    <!--<section class="profile section" id="profile">
                         <h2 class="section-title">Profile</h2>
 
-                        <p class="profile__description">
+                        <p class="profile__description lg_english">
                             I'm a Software Engineer from Tunis Tunisia. 
                             I love technology and mobile software development, working on Android / iOS mobile applications.
                         </p>
-                    </section>
+                    </section>-->
                     
                     <!--========== EDUCATION ==========-->
                     <section class="education section" id="education">
                         <h2 class="section-title">Education</h2>
                         <div class="education__container bd-grid">
 
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
-                                </div>
 
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">Master of Design</h3>
-                                    <span class="education__studies">University</span>
-                                    <span class="education__year">2010 - 2015</span>
-                                </div>
-                            </div>
 
-                            <div class="education__content">
-                                <div class="education__time">
-                                    <span class="education__rounder"></span>
-                                    <span class="education__line"></span>
-                                </div>
-
-                                <div class="education__data bd-grid">
-                                    <h3 class="education__title">Web Developer</h3>
-                                    <span class="education__studies">Institute</span>
-                                    <span class="education__year">2016 - 2019</span>
-                                </div>
-                            </div>
 
                             <div class="education__content">
                                 <div class="education__time">
@@ -171,41 +158,103 @@
                                 </div>
 
                                 <div class="education__data bd-grid">
-                                    <h3 class="education__title">Master in UI/UX</h3>
-                                    <span class="education__studies">University</span>
-                                    <span class="education__year">2019 - 2021</span>
+                                    <h3 class="education__title lg_english">Computer Engineering</h3> <h3 class="education__title lg_french">Ingénierie en informatique</h3>
+                                    <span class="education__studies">ESPRIT - Ecole Supérieure Privée d'ingénierie et de Technologies
+                                        <br> <p class="lg_english">Specialty: Mobile Development</p> <p class="lg_french">Specialité:  Développement Mobile</p>
+                                    </span>
+                                    <span class="education__year">2017 - Present</span>
                                 </div>
                             </div>
+
+
 
                             
                         </div>
                     </section>
 
 
-                    <!--========== SKILLS  ==========-->
-                    <section class="skills section" id="skills">
-                        <h2 class="section-title">Skills</h2>
+                    <!--========== rewards  ==========-->
+                    <section class="skills section" id="rewards">
+                        <h2 class="section-title lg_english">Rewards</h2> <h2 class="section-title lg_french">Récompenses</h2>
 
                         <div class="skills__content bd-grid">
                             <ul class="skills__data">
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> HTML
+                                    <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/trophy.png" alt="map">Reflektor
+                                </li>
+                                <li class="skills__name lg_english">
+                                    Presented at the 2018 best projects
+                                    <br>2nd prize ”Best game” at GD3 2018.
+                                </li>
+
+                                <li class="skills__name lg_french">
+                                    Présenté aux meilleurs projets de l'année 2018
+                                    <br>2eme prix « Meilleur jeu » au GD3 
+                                    2eme Place Esprit-Bal de projet 2021
+
+                                </li>
+                            </ul>
+
+                            <ul style="margin-top: 5px;" class="skills__data">
+                                <li class="skills__name">
+                                    <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/trophy.png" alt="map">CryptoSpace
+                                </li>
+
+                                <li class="skills__name lg_english">
+                                    Presented at the 2021 best projects
+                                </li>
+                                <li class="skills__name lg_french">
+                                    Présenté aux meilleurs projets 2021
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+<br>
+                    <!--========== SKILLS  ==========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title lg_english">Skills</h2>
+                        <h2 class="section-title lg_french">Compétences</h2>
+
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+     
+                                <li class="skills__name">
+                                    <div>
+                                        <strong class="lg_english">• Mobile development :</strong> <strong class="lg_french">• Développement Mobile :</strong>
+                                        <br>Flutter (Dart), Swift/SwiftUI, Android (Java), Ionic
+                                        
+                                    </div>
                                 </li>
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> CSS
+                                    <div>
+                                        <strong class="lg_english">• Web development :</strong> <strong class="lg_french">• Développement Web :</strong>
+                                        <br>ASP.NET (C#), Angular, NodeJS, Spring, Symfony, PHP, JavaScript, HTML/CSS
+                                    </div>
                                 </li>
-                                <li class="skills__name">
-                                    <span class="skills__circle"></span> JS
-                                </li>
+                                
                             </ul>
 
                             <ul class="skills__data">
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> Angular
+                                    <div>
+                                        <strong class="lg_english">• Blockchain development :</strong> <strong class="lg_french">• Développement Blockchain :</strong>
+                                        <br>Solidity, web3, Truffle, Ganache, Infura
                                 </li>
+
                                 <li class="skills__name">
-                                    <span class="skills__circle"></span> React
+                                    <div>
+                                        <strong>• Version Control : </strong>
+                                     Git, SVN, Jira Software, Microsoft Azure
+                                    </div>
                                 </li> 
+
+                                <li class="skills__name">
+                                    <div>
+                                        <strong class="lg_english">• Containerization :</strong> <strong class="lg_french">• Conteneurisation :</strong>
+                                        Docker
+                                        
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </section>
@@ -215,9 +264,57 @@
                 <div class="resume__right">
                     <!--========== EXPERIENCE ==========-->
                     <section class="experience section" id="experience">
-                        <h2 class="section-title">Experience</h2>
+                        <h2 class="section-title lg_english">PROFESSIONAL INTERNSHIPS</h2> <h2 class="section-title lg_french">STAGES PROFESSIONNELS</h2> 
 
                         <div class="experience__container bd-grid">
+
+                            <!-- efawateer -->
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid"> 
+                                    <h3 class="experience__title lg_english">Mobile Software Developer (Flutter)</h3> <h3 class="experience__title lg_french">Développeur d'applications mobiles (Flutter)</h3>
+                                    <span class="experience__company lg_english">
+                                        <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">
+                                        June 2022 - Present | <img class="company__icon" src="assets/img/sirat.png" alt="sirat"> Sirat.io</span>
+
+
+                                    <span class="experience__company lg_french">
+                                        <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">
+                                        Juin 2022 - Present | <img class="company__icon" src="assets/img/sirat.png" alt="sirat"> Sirat.io</span>    
+
+                                    <p class="experience__description lg_english">
+                                        Design and Development of the e-Fawateer mobile application, a solution that allows you to digitize your invoicing and collection procedure.<br>
+                                        
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Animations <br> 
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Balance charts <br> 
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> PIN code lock system <br>           
+                                        
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Public speaking <br> 
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Ability to work in a group <br> 
+                                        Flutter, JWT Authentification, API REST, JAVA, Springboot, PostgreSQL
+                                    </p>
+ 
+                                    
+                                    <p class="experience__description lg_french">
+                                        Conception et Développement de l'application mobile e-Fawateer, une solution qui vous permet de digitaliser la procédure de facturation et d'encaissement.<br>
+
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Animations <br> 
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Statistiques <br> 
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Système de verrouillage par code PIN  <br>           
+                                        
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> travail en groupe <br> 
+                                        Outils : Flutter, JWT Authentification, API REST, JAVA, Springboot, PostgreSQL
+                                    </p>
+                                    
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Industry X.0 -->
                             <div class="experience__content">
                                 <div class="experience__time">
                                     <span class="experience__rounder"></span>
@@ -225,71 +322,182 @@
                                 </div>
 
                                 <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Master of Design</h3>
-                                    <span class="experience__company">From 2013 to 2015 | Tech Soft</span>
-                                    <p class="experience__description">
+                                    <h3 class="experience__title lg_english">Working student Full-stack Engineer</h3> <h3 class="experience__title lg_french">Job etudiant Full-stack Engineer</h3>
+                                    <span class="experience__company lg_english"><img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">March 2021 - April 2021 | <img class="company__icon" src="assets/img/industry.png" alt="sirat">&nbsp;Industry X.0</span>
+                                    <span class="experience__company lg_french"><img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">Mars 2021 - Avril 2021 | <img class="company__icon" src="assets/img/industry.png" alt="sirat">&nbsp;Industry X.0</span>
+                                    
+                                    <p class="experience__description lg_english">
+                                        Front-end developement: HTML, CSS, JavaScript, TypeScript,AngularJS
+                                        <br>Back-end developement: Springboot, REST API, Jhipster, PostgreSQL
+                                        <br>Team management
+                                    </p>
+
+                                    <p class="experience__description lg_french">
+                                        Développement front-end: HTML, CSS, JavaScript, TypeScript,AngularJS
+                                        <br>Développement back-end: Springboot, API REST, Jhipster, PostgreSQL
+                                        <br>Gestion d'équipe
+                                    </p>               
+                                </div>
+                            </div>
+
+                            <!-- Ecostaff 2 -->
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Développeur .NET </h3>
+                                    <span class="experience__company lg_english"><img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">July 2020 - September 2020 | <img class="company__icon" src="assets/img/ecostaff.jpg" alt="ecostaff"> Ecostaff</span>
+                                    <span class="experience__company lg_french"><img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">Juillet 2020 - Septembre 2020 | <img class="company__icon" src="assets/img/ecostaff.jpg" alt="ecostaff"> Ecostaff Tunisie</span>
+                                    
+                                    <p class="experience__description lg_english">
+                                        Debugging and problem solving
+                                        <br>Backend development: C#, ASP.NET MVC ,Microsoft SQL Server
+                                        <br>Frontend development: HTML/CSS, Razor, Bootstrap, Ajax
+                                    </p>
+
+                                    <p class="experience__description lg_french">
+                                        Débogage et résolution de problèmes
+                                        <br>Développement back-end: C#, ASP.NET MVC ,Microsoft SQL Server
+                                        <br>Développement front-end: HTML/CSS, Razor, Bootstrap, Ajax
+                                    </p>
+                                    
+                                </div>
+                            </div>
+
+                            <!-- Ecostaff 1 -->
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title lg_english">Software Development Intern</h3>
+                                    <h3 class="experience__title lg_french">Stagiaire en développement web</h3>
+                                    <span class="experience__company lg_english"><img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">July 2019 - August 2019 | <img class="company__icon" src="assets/img/ecostaff.jpg" alt="ecostaff"> Ecostaff</span>
+                                    <span class="experience__company lg_french"><img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">Juillet 2019 - Aout 2019 | <img class="company__icon" src="assets/img/ecostaff.jpg" alt="ecostaff"> Ecostaff Tunisie</span>
+                                    <p class="experience__description lg_english">
+                                        Database Design 
+                                        <br>Learn ASP.NET MVC, Entity Framework and Code First Migration
+                                        <br>Implementation of Knockout JS
+                                    </p>
+                                    <p class="experience__description lg_french">
+                                        Conception de la base de données 
+                                        <br>Apprendre ASP.NET MVC, Entity Framework et Code First Migration
+                                        <br>Apprendre l'injection des dépendances et les requétes LINQ 
+                                        <br>l'implementation de Knockout JS
+                                        <br>Méthodologie agile scrum
+                                    </p>                                   
+                                </div>
+                            </div>
+
+
+                            <!-- Resodoc -->
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                </div>
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title lg_english">Software Development Intern</h3> 
+                                    <h3 class="experience__title lg_french">Stage ouvrier</h3>
+                                    <span class="experience__company lg_english"><img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">July 2018 - August 2018 | <img class="company__icon" src="assets/img/sirat.png" alt="sirat"> Sirat.io</span>
+                                    <span class="experience__company lg_french"><img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">Juillet 2018 - Aout 2018 | <img class="company__icon" src="assets/img/sirat.png" alt="sirat"> Sirat.io</span>
+                                    <p class="experience__description lg_english">
                                         Development of a cross-platform mobile application
-                                        "ResoDoc" a network of doctors
-                                        Ionic, TypeScript, HTML, CSS.
+                                        <br>"ResoDoc" a network of doctors
+                                        <br>Ionic, TypeScript, HTML, CSS.
                                     </p>
+                   
                                     
+                                    <p class="experience__description lg_french">
+                                        Développement de l'application mobile "ResoDoc" le premier réseau e-santé en Afrique du nord et en Afrique sub-saharienneun réseau de médecins
+                                        <br>Outils : Ionic, TypeScript, HTML, CSS.
+                                    </p>
                                 </div>
                             </div>
 
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <span class="experience__line"></span>
-                                </div>
 
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Software Development Intern</h3>
-                                    <span class="experience__company">July 2019 - August 2019 | Ecostaff</span>
-                                    <p class="experience__description">
-                                        Backend development: C#, .NET
-                                        Frontend development: HTML/CSS, Bootstrap, Ajax
-                                    </p>
-                                    
-                                </div>
-                            </div>
-
-                            <div class="experience__content">
-                                <div class="experience__time">
-                                    <span class="experience__rounder"></span>
-                                    <!--<span class="experience__line"></span>-->
-                                </div>
-
-                                <div class="experience__data bd-grid">
-                                    <h3 class="experience__title">Software Development Intern</h3>
-                                    <span class="experience__company">June 2021 - Present | sirat.io</span>
-                                    <p class="experience__description">
-                                        Design and Development of a cross-platform mobile application
-                                        e-Signature, Springboot, Flutter, PostgreSQL
-                                    </p>
-                                    
-                                </div>
-                            </div>
                         </div>
                     </section>
 
-                    <!--========== CERTIFICATES ==========-->
+                    <!--========== ACADEMIC PROJECTS ==========-->
                     <section class="certificate section" id="certificates">
-                        <h2 class="section-title">Certificates</h2>
+                        <h2 class="section-title lg_english">ACADEMIC PROJECTS</h2>
+                        <h2 class="section-title lg_french">PROJETS ACADÉMIQUES</h2>
                         <div class="certificate__container bd-grid">
+
                             <div class="certificate__content">
-                                <h3 class="certificate__title">Certified for compliance in the work area (2012)</h3>
-                                <p class="certificate__description">certificate description</p>
+                                <h3 class="certificate__title lg_english">CryptoSpace : Gaming based cryptocurrency  &nbsp;&nbsp; <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">January - June 2021</h3>
+                                <h3 class="certificate__title lg_french">CryptoSpace : Gaming based cryptocurrency  &nbsp;&nbsp; <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">Janvier - Juin 2021</h3>
+                                <p class="certificate__description"> une plateforme qui permet aux utilisateurs d'être rémunérés en
+                                    crypto-monnaie en jouant aux mini-jeux de l'application <br>
+                                    <div>
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> envoi/réception de crypto-monnaie <br> 
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> QR Code  <br> 
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> solde et historique des transactions <br> 
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Intégration des jeux Unity <br> 
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Intégration du système Admod <br> 
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Recuperation des contacts <br> 
+                                        <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Deploiement du token dans le TestNet officiel Ropsten <br> 
+
+                                    </div>
+                                    
+                                    Outils : Flutter, Unity, AdMob, NodeJS, Solidity, Truffle, web3, Docker
+                                </p>
                             </div>
 
                             <div class="certificate__content">
-                                <h3 class="certificate__title">Certified for compliance in the work area (2012)</h3>
-                                <p class="certificate__description">certificate description</p>
+                                <h3 class="certificate__title lg_english">
+                                    iCheck  &nbsp;&nbsp; <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">September 2020 - January 2021</h3>
+                                    
+                                    <h3 class="certificate__title lg_french">
+                                        iCheck  &nbsp;&nbsp; <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">Septembre 2020 - Janvier 2021</h3>
+                                <p class="certificate__description lg_english">Development of an Augmented Reality mobile application
+                                       
+                                    <div class="lg_english">
+                                            <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> AR Objects (ARKit)<br> 
+                                            <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> IBM Watson chatbot <br> 
+                                            <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Realtime chat <br> 
+                                            <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Friend requests <br> 
+                                            <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Core data <br>            
+                                                   
+                                    </div>
+                                    <p class="lg_english">Android, iOS, ARCore ,ARKit, NodeJS, MongoDB, Heroku</p>
+                                </p>
+
+                                <p class="certificate__description lg_french">Développement d'une application mobile de réalité augmentée
+                                    <div class="lg_french">
+                                            <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Objets AR (ARKit)<br> 
+                                            <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> IBM Watson chatbot <br> 
+                                            <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Chat en temps réel <br> 
+                                            <img style="width: 15px;height: 15px;" src="assets/img/check.png" alt=""> Core data <br>            
+                                                   
+                                    </div>
+                                    <p class="lg_french">Outils : Android, iOS, ARCore ,ARKit, NodeJS, MongoDB, Heroku</p>
+                                </p>
                             </div>
 
+
+
+
                             <div class="certificate__content">
-                                <h3 class="certificate__title">Certified for compliance in the work area (2012)</h3>
-                                <p class="certificate__description">certificate description</p>
+                                <h3 class="certificate__title lg_english">Taland : Social media &nbsp;&nbsp; <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">January 2020 - May 2020</h3>
+                                <h3 class="certificate__title lg_french">Taland : Réseau social &nbsp;&nbsp; <img class="home__icon" style="width: 15px;height: 15px;" src="assets/img/logo/calendar.png" alt="map">Janvier 2020 - Mai 2020</h3>
+                                
+                                <p class="certificate__description lg_english">a multiplatform Social Media: Desktop, Mobile
+                                    and Website 
+                                    <br>Symfony(PHP), Java, Android,iOS with CodeNameOne, SQL
+                                    </p>
+                                <p class="certificate__description lg_french">un réseau social multiplateforme : desktop, Web et mobile
+                                    <br>Symfony(PHP), Java, Android et iOS avec CodeNameOne, SQL
+                                </p>    
                             </div>
+
+
+
                         </div>
                     </section>
 
@@ -298,42 +506,61 @@
                         <h2 class="section-title">References</h2>
 
                         <div class="references__container bd-grid">
-                            <div class="references__content bd-grid">
-                                <span class="references__subtitle">Sr. Director</span>
-                                <h3 class="references__title">Mr. Clay Doe</h3>
+                            <div style="text-align: center;" class="references__content">
+                                <img style="border-radius: 50%;" src="assets/img/aymen.jfif" alt=""><br>
+                                <span class="references__subtitle lg_english">Director at Ecostaff</span> <span class="references__subtitle lg_french">Directeur chez Ecostaff</span>
+                                <h3 class="references__title">Aymen Bel Hadj Yahia</h3>
                                 <ul class="references__contact">
-                                    <li>Phone :999-777-888</li>
-                                    <li>Email :user@gmail.com</li>
+                                    <li>Email :aymen.belhadjyahia@ecostaff.fr </li>
                                 </ul>
                             </div>
 
                             <div class="references__content bd-grid">
-                                <span class="references__subtitle">Mag. Developer</span>
-                                <h3 class="references__title">Mr. Clay Doe</h3>
-                                <ul class="references__contact">
-                                    <li>Phone :999-777-888</li>
-                                    <li>Email :user@gmail.com</li>
-                                </ul>
+                                <div style="text-align: center;" class="references__content">
+                                    <img style="border-radius: 50%;" src="assets/img/zakaria.jfif" alt=""><br>
+                                    <span class="references__subtitle lg_english">IT architect<br>Manager at Sirat<br>Expert consultant at UNO/UNCTAD</span>
+                                    <span class="references__subtitle lg_french">IT architect<br>Manager à Sirat<br>Consultant Expert à l'UNO/UNCTAD</span>
+                                    
+                                    <h3 class="references__title">Zakaria Karim MEKNI</h3>
+                                    <ul class="references__contact">
+                                        <li>Email :zmekni@gmail.com</li>
+                                    </ul>
+                                </div>
                             </div>
                     </div>
                     </section>
 
                     <!--========== LANGUAGES ==========-->
                     <section class="languages section">
-                        <h2 class="section-title">Languages</h2>
-
+                        <h2 class="section-title lg_english">Languages</h2>
+                        <h2 class="section-title lg_french">Langues</h2>
                         <div class="languages__container">
-                            <ul class="languages__content bd-grid">
+
+                            <ul class="languages__content bd-grid lg_english">
                                 <li class="languages__name">
-                                    <span class="languages__circle"></span> Spanish
+                                    <span class="languages__circle"></span> English : Fluent
                                 </li>
 
                                 <li class="languages__name">
-                                    <span class="languages__circle"></span> English
+                                    <span class="languages__circle"></span> French : Fluent
                                 </li>
 
                                 <li class="languages__name">
-                                    <span class="languages__circle"></span> French
+                                    <span class="languages__circle"></span> Arabic : Native
+                                </li>
+                            </ul>
+
+                            <ul class="languages__content bd-grid lg_french">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> English : Courant;
+                                </li>
+
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> French : Courant;
+                                </li>
+
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Arabic : Langue maternelle
                                 </li>
                             </ul>
                         </div>
@@ -341,27 +568,53 @@
                     
                     <!--========== INTERESTS ==========-->
                     <section class="interests section">
-                        <h2 class="sections-title">Interests</h2>
+                        <h2 class="sections-title lg_english">Interests</h2>
+                        <h2 class="sections-title lg_french">Centre d'intérêts</h2>
+                        
 
-                        <div class="interests__container bd-grid">
+                        <div class="interests__container bd-grid lg_english">
                             <div class="interests__content">
-                                <i class="bx bx-headphone interests__icon"></i>
+                                <img class="home__icon" style="width: 25px;height: 25px;" src="assets/img/logo/sound.png" alt="map">
                                 <span class="interests__name">Music</span>
                             </div>
 
                             <div class="interests__content">
-                                <i class="bx bxs-plane-alt interests__icon"></i>
-                                <span class="interests__name">Travel</span>
+                                <img class="home__icon" style="width: 25px;height: 25px;" src="assets/img/logo/bitcoin.png" alt="map">
+                                <span class="interests__name">Cryptocurrency</span>
                             </div>
 
                             <div class="interests__content">
-                                <i class="bx bx-book interests__icon"></i>
-                                <span class="interests__name">Reading</span>
+                                <img class="home__icon" style="width: 25px;height: 25px;" src="assets/img/logo/rocket.png" alt="map">
+                                <span class="interests__name">Rocket Science</span>
                             </div> 
 
                             <div class="interests__content">
-                                <i class="bx bx-dumbbell interests__icon"></i>
-                                <span class="interests__name">Fitness</span>
+                                <img class="home__icon" style="width: 25px;height: 25px;" src="assets/img/logo/basketball.png" alt="map">
+                                <span class="interests__name">Basketball</span>
+                            </div>
+ 
+                        </div>
+
+
+                        <div class="interests__container bd-grid lg_french">
+                            <div class="interests__content">
+                                <img class="home__icon" style="width: 25px;height: 25px;" src="assets/img/logo/sound.png" alt="map">
+                                <span class="interests__name">Music</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <img class="home__icon" style="width: 25px;height: 25px;" src="assets/img/logo/bitcoin.png" alt="map">
+                                <span class="interests__name">Crypto-monnaie</span>
+                            </div>
+
+                            <div class="interests__content">
+                                <img class="home__icon" style="width: 25px;height: 25px;" src="assets/img/logo/rocket.png" alt="map">
+                                <span class="interests__name">Rocket Science</span>
+                            </div> 
+
+                            <div class="interests__content">
+                                <img class="home__icon" style="width: 25px;height: 25px;" src="assets/img/logo/basketball.png" alt="map">
+                                <span class="interests__name">Basketball</span>
                             </div>
  
                         </div>
@@ -376,9 +629,19 @@
         </a>        
 
         <!--========== HTML2PDF ==========-->
+
         <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
 
         <!--========== MAIN JS ==========-->
+        <script src="assets/js/html-to-image.js"></script>
+        <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/main.js"></script>
+
+        <script>
+            $( ".lg_english" ).hide();
+            $( ".lg_french" ).show();
+        </script>
+        
+
     </body>
 </html>

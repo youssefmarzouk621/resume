@@ -103,20 +103,44 @@ var opt = {
     filename:     'Youssef_Marzouk.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
     html2canvas:  { scale: 4 },
-    jsPDF:        { format: 'a4', orientation: 'portrait' }
+    jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
   };
 
 // Function to call areaCv and Html2Pdf options 
 
 // When the button is clicked, it executes the three functions
-function downloadPDF() {
+/*function downloadPDF() {
     let areaCV = document.getElementById('area-cv')
     // 1. The class .scale-cv is added to the body, where it reduces the size of the elements
     scaleCV()
 
     // 2. The PDF is generated
     var worker = html2pdf().set(opt).from(areaCV).save();
+    //var worker = html2pdf().from(areaCV).toImg().save();
     // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
     setTimeout(removeScale,5000)
+}*/
+
+function downloadIMG() {
+    document.getElementById('resume-button').style.display = "none";
+    document.getElementById('theme-button').style.display = "none";
+    
+    var node = document.getElementById('area-cv');
+
+    htmlToImage.toJpeg(node)
+    .then(function (dataUrl) {
+        var link = document.createElement('a');
+        link.download = 'Youssef Marzouk.jpeg';
+        link.href = dataUrl;
+        link.click();
+        setTimeout(function() {
+            document.getElementById('resume-button').style.display = "block";
+            document.getElementById('theme-button').style.display = "block";
+        },1000);
+
+
+    });
+
 }
+
 

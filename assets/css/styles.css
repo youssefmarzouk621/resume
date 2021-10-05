@@ -210,7 +210,7 @@ img{
 /*========== CLASS CSS ==========*/
 
 .section{
-  padding: 1.5rem 0;
+  padding: 0.7rem 0;
 }
 
 .section-title{
@@ -220,7 +220,7 @@ img{
   text-transform: uppercase;
   letter-spacing: .35rem;
   text-align: center;
-  margin-bottom: var(--mb-3);
+  margin-bottom: var(--mb-1);
 }
 
 
@@ -448,8 +448,15 @@ img{
 .education__year{
   font-size: var(--smaller-font-size);
 }
+
+.company__icon{
+  height: 20px;
+    width: 20px;
+    position: relative;
+    top: 6px;
+}
 /*========== SKILLS AND LANGUAGES ==========*/
-.skills__content,.languages__content{
+.languages__content{
   grid-template-columns: repeat(2,1fr);
 }
 
@@ -465,7 +472,7 @@ img{
 .skills__name,.languages__name{
   display: flex;
   align-items: center;
-  margin-bottom: var(--mb-3);
+  margin-bottom: var(--mb-1);
 
 }
 
